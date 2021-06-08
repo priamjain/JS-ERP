@@ -150,7 +150,7 @@ function Input({input,handleChange,addNew,updateItem,deleteItem}) {
 									{input.itemsList.map((item,index)=>{
 										return(
 											<tr  key={item.id}>
-												<td className={styles.item}><input type="text" className={styles.input_text} value={item.hsn} onChange={e=>{updateItem(item.id,"hsn",e)}} placeholder=""/></td>
+												<td className={styles.item}><input type="text" className={styles.input_text} value={3902} onChange={e=>{updateItem(item.id,"hsn",e)}} placeholder=""/></td>
 											</tr>
 											)
 									})}
