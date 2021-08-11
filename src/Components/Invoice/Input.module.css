@@ -1,177 +1,173 @@
-.invoice{
-    font-weight: bold;
-    font-size: 12px!important;
-    margin: 0;
-    padding: 0;
-    zoom:175%;
-    padding: 5px;
-    margin: auto;
-    width: 210mm;
-    height: 297mm;
-    max-height: 297mm;
+.invoice {
+  font-weight: bold;
+  font-size: 12px !important;
+  margin: 0;
+  padding: 0;
+  zoom: 175%;
+  padding: 5px;
+  margin: auto;
+  width: 210mm;
+  height: 297mm;
+  max-height: 297mm;
 }
 
-.firm_name{
-    color:#007bff;
-    font-size: 3em;
-    font-family: times;
-    font-weight: 1000;
+.firm_name {
+  color: #007bff;
+  font-size: 3em;
+  font-family: times;
+  font-weight: 1000;
 }
 
-.header_info div{
-    display: flex;
-    justify-content: space-around;
+.header_info div {
+  display: flex;
+  justify-content: space-around;
 }
 
-.header_info_span{
-    font-size: 1.3em;
+.header_info_span {
+  font-size: 1.3em;
 }
-.header_address{
-    padding-left: 20px;
+.header_address {
+  padding-left: 20px;
 }
-select::-ms-expand
-{
-    display: none;
+select::-ms-expand {
+  display: none;
 }
-select
-{
-    outline: none;
-    border: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;      
-    appearance: none;
-    padding: 2px 30px 2px 2px;
-    /*border: none; - if you want the border removed*/
+select {
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 2px 30px 2px 2px;
+  /*border: none; - if you want the border removed*/
 }
-.input_text,.input_text:focus{
-    font-weight: bold;
-    width: 100%;
-    text-align: left;
-    background-color: inherit;
-    font-size: 12px!important;
-    color: inherit;
-    border:none;
-    outline: none;
+.input_text,
+.input_text:focus {
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  background-color: inherit;
+  font-size: 12px !important;
+  color: inherit;
+  border: none;
+  outline: none;
 }
-.info_input_text{
-    padding: 0 40px;
+.info_input_text {
+  padding: 0 40px;
 }
-.input_date{
-    font-weight: bold;
-    padding: 0 5px;
-    border:none;
-    outline: none;
+.input_date {
+  font-weight: bold;
+  padding: 0 5px;
+  border: none;
+  outline: none;
 }
-.fixed_textarea{
-    overflow-y: hidden;
-    resize: none;
-}
-
-.header{
-    text-align: center;
-    width: 100%;
-    margin-bottom:20px;
+.fixed_textarea {
+  overflow-y: hidden;
+  resize: none;
 }
 
-
-.table{
-    vertical-align: top;
-    border-collapse: collapse;
-    margin: 5px 0;
-    width:100%;
-    border:1px solid black;
+.header {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.table td,.table th{
-    border-left:1px solid black;
-    vertical-align: top;
+.table {
+  vertical-align: top;
+  border-collapse: collapse;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.table td,
+.table th {
+  border-left: 1px solid black;
+  vertical-align: top;
 }
 .select {
-    font-weight: bold;
-    padding: 0 40px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    background: none;
+  font-weight: bold;
+  padding: 0 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
 }
-.item{
-    width: 100%;
-    padding: 4px 0;
-    text-align: top;
+.item {
+  width: 100%;
+  padding: 4px 0;
+  text-align: top;
 }
-.footer{
- margin:0 10px;
- border-collapse: collapse;
- width: 100%;
- margin-left: auto;
+.footer {
+  margin: 0 10px;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: auto;
 }
-.footer input{
-    text-align: start;
+.footer input {
+  text-align: start;
 }
-.footer p{
-    padding-left: 10px;
+.footer p {
+  padding-left: 10px;
 }
-.delete_item{
-    background-color: red;
-    position: absolute;
+.delete_item {
+  background-color: red;
+  position: absolute;
+  display: none;
+}
+.item {
+  font-weight: bold;
+  height: 20px;
+}
+.item:hover .delete_item {
+  display: block;
+}
+.signature {
+  width: 200px;
+  margin-left: auto;
+}
+.main {
+  text-align: center;
+  display: block;
+  height: 590px;
+}
+.main_row > td {
+  height: 572px;
+}
+.main input {
+  text-align: center;
+}
+.main_inside {
+  border: none;
+}
+.main_inside td {
+  border-left: none;
+}
+.watermark {
+  display: none;
+  position: fixed;
+  color: lightgray;
+  opacity: 0.5;
+  font-size: 8em;
+  width: 100%;
+  top: 40%;
+  right: 20%;
+  text-align: center;
+  transform: rotate(-20deg);
+}
+@media print {
+  .no_print {
     display: none;
-}
-.item{
-    font-weight: bold;
-    height: 20px;
-}
-.item:hover .delete_item{
+  }
+  .invoice {
+    zoom: 0;
+  }
+  .only_print {
     display: block;
-
-}
-.signature{
-    width: 200px;
-    margin-left: auto;
-}
-.main{
-    text-align: center;
-    display: block;
-    height: 590px;
-}
-.main_row>td{
-    height: 572px;
-}
-.main input{
-    text-align: center;
-}
-.main_inside{
-    border:none;
-}
-.main_inside td{
-    border-left: none;
-}
-.watermark{
-    display: none;
-    position: fixed;
-    color: lightgray;
-    opacity: 0.5;
-    font-size: 8em;
-    width: 100%;
-    top: 40%; 
-    right:20%;   
-    text-align: center;
-    transform: rotate(-20deg);
-    
-} 
-@media print{
-    .no_print{
-        display: none;
-    }
-    .invoice{
-        zoom:0;
-    }
-    .only_print{
-        display: block;
-    }
+  }
 }
 @page {
   size: A4;
   margin: 0;
 }
-
